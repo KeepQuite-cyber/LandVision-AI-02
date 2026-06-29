@@ -1,0 +1,20 @@
+const CONFIG = {
+    BASE_URL: "http://127.0.0.1:8000/api/v1/",
+    DEFAULT_MAP: {
+        lat: 26.7606,
+        lng: 83.3732,
+        zoom: 11
+    },
+
+    ENDPOINTS: {
+        STATES: "states/",
+        DISTRICTS: "districts/",
+        TEHSILS: "tehsils/",
+        VILLAGES: "villages/",
+        OWNERS: "owners/",
+        PLOTS: "plots/",
+        MAP: "plots/map/",
+        SEARCH_PLOT: "plots/",
+        AI_CHAT: "ai/chat/",
+    }
+};

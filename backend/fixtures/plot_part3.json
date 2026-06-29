@@ -1,0 +1,192 @@
+[
+  {
+    "model": "plot.plot",
+    "pk": 21,
+    "fields": {
+      "village": 1,
+      "owner": 1,
+      "plot_number": "201",
+      "area": "965.40",
+      "land_use": "Residential",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6100,26.9100],[83.6111,26.9100],[83.6111,26.9112],[83.6100,26.9112],[83.6100,26.9100]]]
+      },
+      "remarks": "Residential corner plot",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 22,
+    "fields": {
+      "village": 1,
+      "owner": 1,
+      "plot_number": "202",
+      "area": "1345.75",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6120,26.9120],[83.6132,26.9120],[83.6132,26.9131],[83.6120,26.9131],[83.6120,26.9120]]]
+      },
+      "remarks": "Agricultural field",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 23,
+    "fields": {
+      "village": 2,
+      "owner": 2,
+      "plot_number": "203",
+      "area": "1458.60",
+      "land_use": "Commercial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6150,26.9140],[83.6162,26.9140],[83.6162,26.9152],[83.6150,26.9152],[83.6150,26.9140]]]
+      },
+      "remarks": "Market side commercial plot",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 24,
+    "fields": {
+      "village": 3,
+      "owner": 3,
+      "plot_number": "204",
+      "area": "1102.80",
+      "land_use": "Residential",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6180,26.9165],[83.6191,26.9165],[83.6191,26.9176],[83.6180,26.9176],[83.6180,26.9165]]]
+      },
+      "remarks": "Family residence",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 25,
+    "fields": {
+      "village": 4,
+      "owner": 3,
+      "plot_number": "205",
+      "area": "1755.20",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6210,26.9190],[83.6223,26.9190],[83.6223,26.9202],[83.6210,26.9202],[83.6210,26.9190]]]
+      },
+      "remarks": "Wheat cultivation plot",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 26,
+    "fields": {
+      "village": 5,
+      "owner": 5,
+      "plot_number": "206",
+      "area": "1822.35",
+      "land_use": "Industrial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6240,26.9210],[83.6255,26.9210],[83.6255,26.9223],[83.6240,26.9223],[83.6240,26.9210]]]
+      },
+      "remarks": "Factory construction land",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 27,
+    "fields": {
+      "village": 6,
+      "owner": 7,
+      "plot_number": "207",
+      "area": "915.65",
+      "land_use": "Government",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6270,26.9235],[83.6282,26.9235],[83.6282,26.9246],[83.6270,26.9246],[83.6270,26.9235]]]
+      },
+      "remarks": "Government reserved land",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 28,
+    "fields": {
+      "village": 7,
+      "owner": 7,
+      "plot_number": "208",
+      "area": "1240.55",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6300,26.9255],[83.6312,26.9255],[83.6312,26.9267],[83.6300,26.9267],[83.6300,26.9255]]]
+      },
+      "remarks": "Sugarcane field",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 29,
+    "fields": {
+      "village": 8,
+      "owner": 10,
+      "plot_number": "209",
+      "area": "1386.90",
+      "land_use": "Commercial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6330,26.9275],[83.6343,26.9275],[83.6343,26.9287],[83.6330,26.9287],[83.6330,26.9275]]]
+      },
+      "remarks": "Shopping complex site",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 30,
+    "fields": {
+      "village": 9,
+      "owner": 12,
+      "plot_number": "210",
+      "area": "1548.45",
+      "land_use": "Others",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6360,26.9295],[83.6373,26.9295],[83.6373,26.9307],[83.6360,26.9307],[83.6360,26.9295]]]
+      },
+      "remarks": "Mixed-use property",
+      "is_active": true,
+      "created_at": "2026-01-05T00:00:00Z",
+      "updated_at": "2026-01-05T00:00:00Z"
+    }
+  }
+]

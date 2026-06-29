@@ -1,0 +1,10 @@
+{
+    "model": "plot.owner",
+    "pk": 21,
+    "fields": {
+        "owner_name": "Rahul Singh",
+        "father_name": "Mahesh Singh",
+        "mobile_number": "9876543210",
+        "address": "Gorakhpur"
+    }
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "model": "plot.plot",
+    "pk": 11,
+    "fields": {
+      "village": 1,
+      "owner": 11,
+      "plot_number": "111",
+      "area": "980.75",
+      "land_use": "Residential",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5100,26.8100],[83.5110,26.8100],[83.5110,26.8110],[83.5100,26.8110],[83.5100,26.8100]]]
+      },
+      "remarks": "Demo Plot 111",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 12,
+    "fields": {
+      "village": 2,
+      "owner": 12,
+      "plot_number": "112",
+      "area": "1430.20",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5200,26.8200],[83.5210,26.8200],[83.5210,26.8210],[83.5200,26.8210],[83.5200,26.8200]]]
+      },
+      "remarks": "Demo Plot 112",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 13,
+    "fields": {
+      "village": 3,
+      "owner": 13,
+      "plot_number": "113",
+      "area": "1195.50",
+      "land_use": "Commercial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5300,26.8300],[83.5310,26.8300],[83.5310,26.8310],[83.5300,26.8310],[83.5300,26.8300]]]
+      },
+      "remarks": "Demo Plot 113",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 14,
+    "fields": {
+      "village": 4,
+      "owner": 14,
+      "plot_number": "114",
+      "area": "1605.30",
+      "land_use": "Industrial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5400,26.8400],[83.5410,26.8400],[83.5410,26.8410],[83.5400,26.8410],[83.5400,26.8400]]]
+      },
+      "remarks": "Demo Plot 114",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 15,
+    "fields": {
+      "village": 5,
+      "owner": 15,
+      "plot_number": "115",
+      "area": "875.40",
+      "land_use": "Government",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5500,26.8500],[83.5510,26.8500],[83.5510,26.8510],[83.5500,26.8510],[83.5500,26.8500]]]
+      },
+      "remarks": "Demo Plot 115",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 16,
+    "fields": {
+      "village": 6,
+      "owner": 16,
+      "plot_number": "116",
+      "area": "1320.00",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5600,26.8600],[83.5610,26.8600],[83.5610,26.8610],[83.5600,26.8610],[83.5600,26.8600]]]
+      },
+      "remarks": "Demo Plot 116",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 17,
+    "fields": {
+      "village": 7,
+      "owner": 17,
+      "plot_number": "117",
+      "area": "1015.65",
+      "land_use": "Residential",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5700,26.8700],[83.5710,26.8700],[83.5710,26.8710],[83.5700,26.8710],[83.5700,26.8700]]]
+      },
+      "remarks": "Demo Plot 117",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 18,
+    "fields": {
+      "village": 8,
+      "owner": 18,
+      "plot_number": "118",
+      "area": "1545.80",
+      "land_use": "Commercial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5800,26.8800],[83.5810,26.8800],[83.5810,26.8810],[83.5800,26.8810],[83.5800,26.8800]]]
+      },
+      "remarks": "Demo Plot 118",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 19,
+    "fields": {
+      "village": 9,
+      "owner": 19,
+      "plot_number": "119",
+      "area": "1120.10",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.5900,26.8900],[83.5910,26.8900],[83.5910,26.8910],[83.5900,26.8910],[83.5900,26.8900]]]
+      },
+      "remarks": "Demo Plot 119",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 20,
+    "fields": {
+      "village": 10,
+      "owner": 20,
+      "plot_number": "120",
+      "area": "1388.95",
+      "land_use": "Others",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [[[83.6000,26.9000],[83.6010,26.9000],[83.6010,26.9010],[83.6000,26.9010],[83.6000,26.9000]]]
+      },
+      "remarks": "Demo Plot 120",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]

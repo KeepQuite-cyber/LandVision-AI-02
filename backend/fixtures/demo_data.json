@@ -1,0 +1,961 @@
+[
+  {
+    "model": "village.state",
+    "pk": 1,
+    "fields": {
+      "name": "Uttar Pradesh",
+      "code": "UP",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.district",
+    "pk": 1,
+    "fields": {
+      "state": 1,
+      "name": "Gorakhpur",
+      "code": "GKP",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.district",
+    "pk": 2,
+    "fields": {
+      "state": 1,
+      "name": "Maharajganj",
+      "code": "MHG",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.district",
+    "pk": 3,
+    "fields": {
+      "state": 1,
+      "name": "Deoria",
+      "code": "DEA",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.tehsil",
+    "pk": 1,
+    "fields": {
+      "district": 1,
+      "name": "Campierganj",
+      "code": "CMP",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.tehsil",
+    "pk": 2,
+    "fields": {
+      "district": 1,
+      "name": "Sadar",
+      "code": "SDR",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.tehsil",
+    "pk": 3,
+    "fields": {
+      "district": 2,
+      "name": "Nautanwa",
+      "code": "NTW",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.tehsil",
+    "pk": 4,
+    "fields": {
+      "district": 2,
+      "name": "Pharenda",
+      "code": "PHD",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.tehsil",
+    "pk": 5,
+    "fields": {
+      "district": 3,
+      "name": "Rudrapur",
+      "code": "RDP",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.tehsil",
+    "pk": 6,
+    "fields": {
+      "district": 3,
+      "name": "Barhaj",
+      "code": "BRH",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 1,
+    "fields": {
+      "tehsil": 1,
+      "name": "Rampur",
+      "village_code": "V001",
+      "gis_code": "14600766124001",
+      "pincode": "273001",
+      "latitude": "26.76",
+      "longitude": "83.36",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 2,
+    "fields": {
+      "tehsil": 1,
+      "name": "Harpur",
+      "village_code": "V002",
+      "gis_code": "14600766124002",
+      "pincode": "273001",
+      "latitude": "26.77",
+      "longitude": "83.36999999999999",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 3,
+    "fields": {
+      "tehsil": 1,
+      "name": "Shivpur",
+      "village_code": "V003",
+      "gis_code": "14600766124003",
+      "pincode": "273001",
+      "latitude": "26.78",
+      "longitude": "83.38",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 4,
+    "fields": {
+      "tehsil": 2,
+      "name": "Mohanpur",
+      "village_code": "V004",
+      "gis_code": "14600766124004",
+      "pincode": "273001",
+      "latitude": "26.79",
+      "longitude": "83.39",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 5,
+    "fields": {
+      "tehsil": 2,
+      "name": "Jagdishpur",
+      "village_code": "V005",
+      "gis_code": "14600766124005",
+      "pincode": "273001",
+      "latitude": "26.8",
+      "longitude": "83.39999999999999",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 6,
+    "fields": {
+      "tehsil": 3,
+      "name": "Siswa",
+      "village_code": "V006",
+      "gis_code": "14600766124006",
+      "pincode": "273001",
+      "latitude": "26.81",
+      "longitude": "83.41",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 7,
+    "fields": {
+      "tehsil": 3,
+      "name": "Khairati",
+      "village_code": "V007",
+      "gis_code": "14600766124007",
+      "pincode": "273001",
+      "latitude": "26.82",
+      "longitude": "83.41999999999999",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 8,
+    "fields": {
+      "tehsil": 4,
+      "name": "Anandpur",
+      "village_code": "V008",
+      "gis_code": "14600766124008",
+      "pincode": "273001",
+      "latitude": "26.83",
+      "longitude": "83.42999999999999",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 9,
+    "fields": {
+      "tehsil": 5,
+      "name": "Rudrapur Khas",
+      "village_code": "V009",
+      "gis_code": "14600766124009",
+      "pincode": "273001",
+      "latitude": "26.84",
+      "longitude": "83.44",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "village.village",
+    "pk": 10,
+    "fields": {
+      "tehsil": 6,
+      "name": "Barhaj Khas",
+      "village_code": "V010",
+      "gis_code": "14600766124010",
+      "pincode": "273001",
+      "latitude": "26.85",
+      "longitude": "83.44999999999999",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 1,
+    "fields": {
+      "name": "Ram Kumar",
+      "father_name": "Demo Father",
+      "mobile": "9876543001",
+      "email": "user1@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 2,
+    "fields": {
+      "name": "Mohan Singh",
+      "father_name": "Demo Father",
+      "mobile": "9876543002",
+      "email": "user2@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 3,
+    "fields": {
+      "name": "Rakesh Yadav",
+      "father_name": "Demo Father",
+      "mobile": "9876543003",
+      "email": "user3@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 4,
+    "fields": {
+      "name": "Suresh Mishra",
+      "father_name": "Demo Father",
+      "mobile": "9876543004",
+      "email": "user4@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 5,
+    "fields": {
+      "name": "Anil Verma",
+      "father_name": "Demo Father",
+      "mobile": "9876543005",
+      "email": "user5@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 6,
+    "fields": {
+      "name": "Vijay Gupta",
+      "father_name": "Demo Father",
+      "mobile": "9876543006",
+      "email": "user6@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 7,
+    "fields": {
+      "name": "Deepak Tiwari",
+      "father_name": "Demo Father",
+      "mobile": "9876543007",
+      "email": "user7@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 8,
+    "fields": {
+      "name": "Santosh Pandey",
+      "father_name": "Demo Father",
+      "mobile": "9876543008",
+      "email": "user8@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 9,
+    "fields": {
+      "name": "Ajay Chaudhary",
+      "father_name": "Demo Father",
+      "mobile": "9876543009",
+      "email": "user9@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 10,
+    "fields": {
+      "name": "Pankaj Dubey",
+      "father_name": "Demo Father",
+      "mobile": "9876543010",
+      "email": "user10@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 11,
+    "fields": {
+      "name": "Vikas Kumar",
+      "father_name": "Demo Father",
+      "mobile": "9876543011",
+      "email": "user11@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 12,
+    "fields": {
+      "name": "Rahul Verma",
+      "father_name": "Demo Father",
+      "mobile": "9876543012",
+      "email": "user12@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 13,
+    "fields": {
+      "name": "Nitin Mishra",
+      "father_name": "Demo Father",
+      "mobile": "9876543013",
+      "email": "user13@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 14,
+    "fields": {
+      "name": "Pradeep Yadav",
+      "father_name": "Demo Father",
+      "mobile": "9876543014",
+      "email": "user14@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 15,
+    "fields": {
+      "name": "Rohit Singh",
+      "father_name": "Demo Father",
+      "mobile": "9876543015",
+      "email": "user15@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 16,
+    "fields": {
+      "name": "Arvind Patel",
+      "father_name": "Demo Father",
+      "mobile": "9876543016",
+      "email": "user16@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 17,
+    "fields": {
+      "name": "Sunil Sharma",
+      "father_name": "Demo Father",
+      "mobile": "9876543017",
+      "email": "user17@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 18,
+    "fields": {
+      "name": "Manoj Rai",
+      "father_name": "Demo Father",
+      "mobile": "9876543018",
+      "email": "user18@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 19,
+    "fields": {
+      "name": "Amit Srivastava",
+      "father_name": "Demo Father",
+      "mobile": "9876543019",
+      "email": "user19@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.owner",
+    "pk": 20,
+    "fields": {
+      "name": "Abhishek Tiwari",
+      "father_name": "Demo Father",
+      "mobile": "9876543020",
+      "email": "user20@example.com",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 1,
+    "fields": {
+      "village": 1,
+      "owner": 1,
+      "plot_number": "101",
+      "area": "1250.50",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.41000000000001,
+              26.71
+            ],
+            [
+              83.41100000000002,
+              26.71
+            ],
+            [
+              83.41100000000002,
+              26.711000000000002
+            ],
+            [
+              83.41000000000001,
+              26.711000000000002
+            ],
+            [
+              83.41000000000001,
+              26.71
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 2,
+    "fields": {
+      "village": 2,
+      "owner": 2,
+      "plot_number": "102",
+      "area": "1250.50",
+      "land_use": "Residential",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.42,
+              26.72
+            ],
+            [
+              83.421,
+              26.72
+            ],
+            [
+              83.421,
+              26.721
+            ],
+            [
+              83.42,
+              26.721
+            ],
+            [
+              83.42,
+              26.72
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 3,
+    "fields": {
+      "village": 3,
+      "owner": 3,
+      "plot_number": "103",
+      "area": "1250.50",
+      "land_use": "Commercial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.43,
+              26.73
+            ],
+            [
+              83.43100000000001,
+              26.73
+            ],
+            [
+              83.43100000000001,
+              26.731
+            ],
+            [
+              83.43,
+              26.731
+            ],
+            [
+              83.43,
+              26.73
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 4,
+    "fields": {
+      "village": 4,
+      "owner": 4,
+      "plot_number": "104",
+      "area": "1250.50",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.44000000000001,
+              26.74
+            ],
+            [
+              83.44100000000002,
+              26.74
+            ],
+            [
+              83.44100000000002,
+              26.741
+            ],
+            [
+              83.44000000000001,
+              26.741
+            ],
+            [
+              83.44000000000001,
+              26.74
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 5,
+    "fields": {
+      "village": 5,
+      "owner": 5,
+      "plot_number": "105",
+      "area": "1250.50",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.45,
+              26.75
+            ],
+            [
+              83.45100000000001,
+              26.75
+            ],
+            [
+              83.45100000000001,
+              26.751
+            ],
+            [
+              83.45,
+              26.751
+            ],
+            [
+              83.45,
+              26.75
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 6,
+    "fields": {
+      "village": 6,
+      "owner": 6,
+      "plot_number": "106",
+      "area": "1250.50",
+      "land_use": "Industrial",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.46000000000001,
+              26.759999999999998
+            ],
+            [
+              83.46100000000001,
+              26.759999999999998
+            ],
+            [
+              83.46100000000001,
+              26.761
+            ],
+            [
+              83.46000000000001,
+              26.761
+            ],
+            [
+              83.46000000000001,
+              26.759999999999998
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 7,
+    "fields": {
+      "village": 7,
+      "owner": 7,
+      "plot_number": "107",
+      "area": "1250.50",
+      "land_use": "Government",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.47,
+              26.77
+            ],
+            [
+              83.471,
+              26.77
+            ],
+            [
+              83.471,
+              26.771
+            ],
+            [
+              83.47,
+              26.771
+            ],
+            [
+              83.47,
+              26.77
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 8,
+    "fields": {
+      "village": 8,
+      "owner": 8,
+      "plot_number": "108",
+      "area": "1250.50",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.48,
+              26.779999999999998
+            ],
+            [
+              83.48100000000001,
+              26.779999999999998
+            ],
+            [
+              83.48100000000001,
+              26.781
+            ],
+            [
+              83.48,
+              26.781
+            ],
+            [
+              83.48,
+              26.779999999999998
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 9,
+    "fields": {
+      "village": 9,
+      "owner": 9,
+      "plot_number": "109",
+      "area": "1250.50",
+      "land_use": "Residential",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.49000000000001,
+              26.79
+            ],
+            [
+              83.49100000000001,
+              26.79
+            ],
+            [
+              83.49100000000001,
+              26.791
+            ],
+            [
+              83.49000000000001,
+              26.791
+            ],
+            [
+              83.49000000000001,
+              26.79
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "plot.plot",
+    "pk": 10,
+    "fields": {
+      "village": 10,
+      "owner": 10,
+      "plot_number": "110",
+      "area": "1250.50",
+      "land_use": "Agriculture",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.5,
+              26.8
+            ],
+            [
+              83.501,
+              26.8
+            ],
+            [
+              83.501,
+              26.801000000000002
+            ],
+            [
+              83.5,
+              26.801000000000002
+            ],
+            [
+              83.5,
+              26.8
+            ]
+          ]
+        ]
+      },
+      "remarks": "Synthetic demo plot",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  }
+]
