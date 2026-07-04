@@ -1,15 +1,11 @@
 import json
-
 from groq import Groq
 from django.conf import settings
-
 from .prompts import SYSTEM_PROMPT
 from .tools import AITools
 
 class AIService:
-    client = Groq(
-        api_key=settings.GROQ_API_KEY
-    )
+    client = Groq(api_key=settings.GROQ_API_KEY)
     @classmethod
     def detect_intent(cls, message):
         completion = cls.client.chat.completions.create(

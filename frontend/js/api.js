@@ -5,11 +5,7 @@ class ApiService {
                 CONFIG.BASE_URL + endpoint
             );
             Object.entries(params).forEach(([key, value]) => {
-                if (
-                    value !== null &&
-                    value !== undefined &&
-                    value !== ""
-                ) {
+                if (value !== null &&value !== undefined &&value !== "") {
                     url.searchParams.append(key, value);
                 }
             });
