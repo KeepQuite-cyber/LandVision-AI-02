@@ -22,168 +22,64 @@
             </select>
         </div>
         <div class="filter-section mt-3">
-            <label class="form-label">
-                District
-            </label>
-
-            <select
-                id="districtSelect"
-                class="form-select"
-            >
-                <option value="">
-                    Select District
-                </option>
+            <label class="form-label">District</label>
+            <select id="districtSelect" class="form-select">
+                <option value="">Select District</option>
             </select>
-
         </div>
-
         <div class="filter-section mt-3">
-
-            <label class="form-label">
-                Tehsil
-            </label>
-
-            <select
-                id="tehsilSelect"
-                class="form-select"
-            >
-                <option value="">
-                    Select Tehsil
-                </option>
+            <label class="form-label">Tehsil</label>
+            <select id="tehsilSelect" class="form-select">
+                <option value=""> Select Tehsil</option>
             </select>
-
         </div>
-
         <div class="filter-section mt-3">
-
-            <label class="form-label">
-                Village
-            </label>
-
-            <select
-                id="villageSelect"
-                class="form-select"
-            >
-                <option value="">
-                    Select Village
-                </option>
+            <label class="form-label">Village</label>
+            <select id="villageSelect"  class="form-select">
+                <option value=""> Select Village</option>
             </select>
-
         </div>
-
         <hr>
-
-        <h5 class="mb-3">
-            🔍 Search Plot
-        </h5>
-
+        <h5 class="mb-3"> 🔍 Search Plot </h5>
         <div class="input-group mb-3">
-
-            <input
-                id="plotSearch"
-                class="form-control"
-                placeholder="Enter Plot Number"
-            >
-
-            <button
-                id="searchBtn"
-                class="btn btn-success"
-            >
-                Search
-            </button>
-
+            <input id="plotSearch" class="form-control" placeholder="Enter Plot Number">
+            <button id="searchBtn" class="btn btn-success"> Search</button>
         </div>
-
         <hr>
-
         <div id="plotInfo">
-
-            <h5>
-                📍 Plot Details
-            </h5>
-
-            <p class="text-muted">
-                No plot selected.
-            </p>
-
+            <h5> 📍 Plot Details</h5>
+            <p class="text-muted"> No plot selected.</p>
         </div>
-
         <hr>
-
         <div class="card shadow-sm">
-
-            <div class="card-header bg-success text-white">
-
-                🤖 LandVision AI Assistant
-
-            </div>
-
+            <div class="card-header bg-success text-white"> 🤖 LandVision AI Assistant</div>
             <div class="card-body">
-
-                <div
-                    id="chatMessages"
-                    class="border rounded p-2 bg-light mb-3"
-                    style="height:180px; overflow-y:auto;"
-                >
-
-                    <div class="text-muted">
-
-                        👋 Hello!
-
-                        <br>
-
+                <div id="chatMessages"  class="border rounded p-2 bg-light mb-3"  style="height:180px; overflow-y:auto;">
+                    <div class="text-muted">👋 Hello!<br>
                         Ask me anything about your land.
-
                     </div>
-
                 </div>
-
                 <div class="input-group">
-
-                    <input
-                        id="chatInput"
-                        class="form-control"
-                        placeholder="Ask AI..."
-                    >
-
-                    <button
-                        id="sendMessage"
-                        class="btn btn-success"
-                    >
-                        Send
-                    </button>
-
+                    <input id="chatInput" class="form-control" placeholder="Ask AI..." >
+                    <button id="sendMessage" class="btn btn-success">Send </button>
                 </div>
-
             </div>
-
         </div>
-
     </aside>
-
-    <main class="map-container">
-
-        <div id="map"></div>
-
-    </main>
-
+    <main class="map-container"><div id="map"></div></main>
 </div>
-
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
 
+
+    
+</script>
 <script src="js/config.js"></script>
-
 <script src="js/api.js"></script>
-
 <script src="js/map.js"></script>
-
 <script src="js/sidebar.js"></script>
-
 <script src="js/search.js"></script>
-
 <script src="js/ai.js"></script>
-
 <script src="js/app.js"></script>
-
 </body>
 </html>
