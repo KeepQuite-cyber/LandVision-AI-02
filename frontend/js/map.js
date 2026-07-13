@@ -1,6 +1,7 @@
 let map;
 let plotLayer;
 const plotLayers = new Map();
+let markerLayer = L.layerGroup();
 let activeLayer = null;
 let blinkInterval = null;
 class MapManager {
@@ -16,6 +17,8 @@ class MapManager {
                     "&copy; OpenStreetMap Contributors"
             }
         ).addTo(map);
+
+        markerLayer.addTo(map)
 
     }
     static defaultStyle(feature) {
@@ -101,19 +104,31 @@ class MapManager {
         this.resetHighlightedPlot();
         map.removeLayer(plotLayer);
         }
+        markerLayer.clearLayers();
         plotLayer = L.geoJSON(geojson, {
             style: this.defaultStyle,
-            onEachFeature: (feature, layer) => {
-                const plotNumber =
-        feature.properties.plot_number.toString();
-
-        plotLayers.set(
-        plotNumber,
-        layer
-         );
+            onEachFeature: (feature, layer) => { const plotNumber = feature.properties.plot_number.toString();
+                 plotLayers.set( plotNumber, layer );
                 layer.bindPopup(
                     this.buildPopup(feature.properties)
                 );
+                const center = layer.getBounds().getCenter();
+                const marker = L.marker(center, {
+                     icon: L.divIcon({
+                        className: "plot-marker",
+                        html: `
+                            <div class="plot-pin">
+                📍
+                                <span>${feature.properties.plot_number}</span>
+                            </div>
+                        `,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 40]
+                        })
+                    });
+
+                    marker.bindPopup(this.buildPopup(feature.properties));
+                    markerLayer.addLayer(marker);
                 layer.on({
                     mouseover: (e) => {
                         this.highlightStyle(e.target);

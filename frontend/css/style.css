@@ -291,3 +291,24 @@ body{
     flex:1;
 
 }
+
+.plot-marker {
+    background: transparent;
+    border: none;
+}
+
+.plot-pin {
+    text-align: center;
+    font-size: 24px;
+}
+
+.plot-pin span {
+    display: block;
+    background: white;
+    border: 1px solid #198754;
+    border-radius: 4px;
+    padding: 1px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #198754;
+}
