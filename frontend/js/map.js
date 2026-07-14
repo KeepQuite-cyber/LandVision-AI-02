@@ -187,7 +187,9 @@ static zoomToPlot(plotNumber) {
 
 
 static highlightPlot(plotNumber) {
+    console.log("Highlighting Plot:", plotNumber);
     const layer = this.getPlotLayer(plotNumber);
+    console.log("Layer:", layer);
     if (!layer) {
         return false;
     }
@@ -244,5 +246,33 @@ static clearPlots() {
         plotLayer = null;
     }
     plotLayers.clear();
+}
+
+static highlightMultiple(plotNumbers) {
+
+    this.resetHighlightedPlot();
+
+    plotNumbers.forEach(plotNumber => {
+
+        const layer = this.getPlotLayer(plotNumber);
+
+        if (!layer) {
+            return;
+        }
+
+        layer.setStyle({
+
+            color: "#dc3545",
+
+            weight: 4,
+
+            fillColor: "#ffc107",
+
+            fillOpacity: 0.8
+
+        });
+
+    });
+
 }
 }

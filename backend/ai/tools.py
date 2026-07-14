@@ -2,7 +2,6 @@ from plot.services import PlotService
 class AITools:
     @staticmethod
     def execute(intent):
-        print(intent)
         action = intent.get("action")
         if action == "search_plot":
             return AITools.search_plot(intent.get("plot_number"))
@@ -20,7 +19,8 @@ class AITools:
             return AITools.statistics()
 
         return {
-            "reply": "Sorry, I couldn't understand your request."
+            "reply": "Sorry, I couldn't understand your request.",
+             "actions": []
         }
 
     @staticmethod
