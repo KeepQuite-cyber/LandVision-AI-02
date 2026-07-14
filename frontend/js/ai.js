@@ -31,7 +31,8 @@ class AIManager {
                 return;
             }
             this.hideLoader();
-            this.addMessage("assistant", response.reply);
+            await this.addMessage("assistant", response.reply);
+            this.executeActions(response.actions);
         }
         catch (error) {
             console.error(error);
@@ -79,4 +80,61 @@ class AIManager {
             loader.remove();
         }
     }
+
+    static executeActions(actions){
+        console.log(actions)
+        if(!Array.isArray(actions) || actions.length === 0){
+            return;
+        }
+
+        actions.forEach(action => {
+            switch (action.action){
+                case "highlight_plot":
+                    MapManager.highlightPlot(
+                    action.plot_number
+                );
+                break;
+
+                case "highlight_multiple":
+                    MapManager.highlightMultiple(
+                    action.plots
+                );
+                break;
+
+                default:
+                    console.warn("Unknown AI Action" , action.action)
+            }
+        });
+    }
+    static async typeMessage(sender, text) {
+
+    const div = document.createElement("div");
+
+    div.className =
+        sender === "user"
+            ? "text-end mb-2"
+            : "text-start mb-2";
+
+    div.innerHTML = `
+        <div class="p-2 rounded border"></div>
+    `;
+
+    this.chatMessages.appendChild(div);
+
+    const bubble = div.querySelector("div");
+
+    for (let i = 0; i < text.length; i++) {
+
+        bubble.textContent += text[i];
+
+        this.chatMessages.scrollTop =
+            this.chatMessages.scrollHeight;
+
+        await new Promise(resolve =>
+            setTimeout(resolve, 15)
+        );
+
+    }
+
+}
 }
