@@ -167,6 +167,46 @@ body{
 
 }
 
+.map-loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(2px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:10000;
+
+}
+
+.loader-content{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.d-none{
+
+    display:none !important;
+
+}
+
 #map{
 
     width:100%;
