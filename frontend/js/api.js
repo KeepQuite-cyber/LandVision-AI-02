@@ -1,38 +1,70 @@
 class ApiService {
-    static async request(endpoint, params = {}) {
-        try {
-            const url = new URL(
-                CONFIG.BASE_URL + endpoint
-            );
-            Object.entries(params).forEach(([key, value]) => {
-                if (value !== null &&value !== undefined &&value !== "") {
-                    url.searchParams.append(key, value);
-                }
-            });
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error(
-                    `HTTP ${response.status} : ${response.statusText}`
+   static async request(endpoint, params = {}) {
+
+    Loader.show();
+
+    try {
+
+        const url = new URL(
+            CONFIG.BASE_URL + endpoint
+        );
+
+        Object.entries(params).forEach(([key, value]) => {
+
+            if (
+                value !== null &&
+                value !== undefined &&
+                value !== ""
+            ) {
+
+                url.searchParams.append(
+                    key,
+                    value
                 );
+
             }
-            const data = await response.json();
-            if (Array.isArray(data)) {
-                return data;
-            }
-            if (data.results) {
-                return data.results;
-            }
+
+        });
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+
+            throw new Error(
+                `HTTP ${response.status}: ${response.statusText}`
+            );
+
+        }
+
+        const data = await response.json();
+
+        if (Array.isArray(data)) {
             return data;
         }
-        catch (error) {
-            console.error(
-                "API Error:",
-                error.message
-            );
-            return [];
+
+        if (data.results) {
+            return data.results;
         }
+
+        return data;
+
     }
 
+    catch (error) {
+
+        console.error("API Error:", error);
+
+        return [];
+
+    }
+
+    finally {
+
+        Loader.hide();
+
+    }
+
+}
     static async getStates() {
         return await this.request(
             CONFIG.ENDPOINTS.STATES
@@ -101,12 +133,13 @@ class ApiService {
 }
 static async chat(message) {
 
+    Loader.show();
+
     try {
 
         const response = await fetch(
 
             CONFIG.BASE_URL +
-
             CONFIG.ENDPOINTS.AI_CHAT,
 
             {
@@ -115,7 +148,8 @@ static async chat(message) {
 
                 headers: {
 
-                    "Content-Type": "application/json"
+                    "Content-Type":
+                        "application/json"
 
                 },
 
@@ -129,26 +163,21 @@ static async chat(message) {
 
         );
 
-        if (!response.ok) {
-
-            throw new Error(
-                `HTTP ${response.status}`
-            );
-
-        }
-
         return await response.json();
 
     }
 
     catch (error) {
 
-        console.error(
-            "AI Error:",
-            error
-        );
+        console.error(error);
 
         return null;
+
+    }
+
+    finally {
+
+        Loader.hide();
 
     }
 
