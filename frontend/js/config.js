@@ -1,5 +1,5 @@
 const CONFIG = {
-    BASE_URL: "https://landvision-ai-backend.onrender.com/api/v1",
+    BASE_URL: "https://landvision-ai-backend.onrender.com/api/v1/",
     DEFAULT_MAP: {
         lat: 26.7606,
         lng: 83.3732,
